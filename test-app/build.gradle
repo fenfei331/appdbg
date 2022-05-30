@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "jmp0.test.testapp"
-        minSdkVersion 19
+        minSdkVersion 28  // 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -41,6 +41,14 @@ android {
             path "src/main/jni/CMakeLists.txt"
             version "3.10.2"
         }
+    }
+
+    // add fenfei
+
+    ndkPath "/Users/zzx/Library/Android/sdk/ndk/21.4.7075529"
+
+    lintOptions {
+        abortOnError false
     }
 }
 
